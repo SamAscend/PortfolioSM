@@ -265,12 +265,14 @@ body {
 .hero {
     position: relative;
     min-height: 100vh;
+    min-height: 100dvh;
     display: flex;
     align-items: center;
     justify-content: center;
     background: transparent;
     overflow: hidden;
     z-index: 1;
+    padding: 80px 0 40px; 
 }
 
 .hero-overlay {
@@ -288,8 +290,9 @@ body.light-mode .hero-overlay {
     position: relative;
     z-index: 3;
     text-align: center;
-    padding: 20px;
+    padding: 30px 20px 20px;
     max-width: 800px;
+    margin-top: -20px; 
 }
 
 .hero-avatar {
@@ -626,31 +629,17 @@ body.light-mode .hero-overlay {
     background: var(--bg-card-hover);
 }
 
-/* ===== TIMELINE IMAGE ===== */
-.timeline-image {
+/* ===== TIMELINE LOGO (GANTI DARI .timeline-image) ===== */
+.timeline-logo {
     width: 100%;
-    height: 140px;
+    height: 120px;
     border-radius: 8px 8px 0 0;
     margin: -20px -24px 14px -24px;
-    background-color: var(--bg-card);
-    background-size: cover;
-    background-position: center;
-    position: relative;
-}
-
-/* Fallback kalo gambar ga ada */
-.timeline-image:not([style*="url"]) {
-    background: linear-gradient(135deg, var(--accent-dim), var(--bg-card)) !important;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: var(--text-muted);
-    font-size: 0.8rem;
-}
-
-/* Light mode untuk timeline-image */
-body.light-mode .timeline-image {
-    background-color: rgba(0, 0, 0, 0.04);
+    position: relative;
+    background-color: var(--bg-card);
 }
 
 /* ===== TIMELINE BADGE ===== */
@@ -754,7 +743,8 @@ body.light-mode .timeline-image {
     box-shadow: 0 20px 40px -12px rgba(0, 0, 0, 0.4);
 }
 
-.project-image {
+/* ===== PROJECT LOGO ===== */
+.project-logo {
     height: 180px;
     display: flex;
     align-items: center;
@@ -765,7 +755,7 @@ body.light-mode .timeline-image {
     background-color: var(--bg-card);
 }
 
-.project-image .badge {
+.project-logo .badge {
     position: absolute;
     top: 12px;
     right: 12px;
@@ -780,7 +770,7 @@ body.light-mode .timeline-image {
     border: 1px solid rgba(34, 211, 238, 0.1);
 }
 
-.project-image .badge.gold {
+.project-logo .badge.gold {
     background: rgba(251, 191, 36, 0.12);
     color: #fbbf24;
     border-color: rgba(251, 191, 36, 0.1);
@@ -855,7 +845,8 @@ body.light-mode .timeline-image {
     box-shadow: 0 12px 30px -12px rgba(0, 0, 0, 0.3);
 }
 
-.certificate-image {
+/* ===== CERTIFICATE LOGO ===== */
+.certificate-logo {
     height: 140px;
     display: flex;
     align-items: center;
@@ -866,7 +857,7 @@ body.light-mode .timeline-image {
     background-color: var(--bg-card);
 }
 
-.certificate-image .cert-badge {
+.certificate-logo .cert-badge {
     position: absolute;
     top: 12px;
     right: 12px;
@@ -881,7 +872,7 @@ body.light-mode .timeline-image {
     border: 1px solid rgba(34, 211, 238, 0.1);
 }
 
-.certificate-image .cert-badge.gold {
+.certificate-logo .cert-badge.gold {
     background: rgba(251, 191, 36, 0.15);
     color: #fbbf24;
     border-color: rgba(251, 191, 36, 0.15);
@@ -1092,10 +1083,18 @@ body.light-mode .timeline-image {
     .timeline-item { padding-left: 20px; }
     .timeline-dot { left: -16px; width: 12px; height: 12px; }
     .timeline-content { padding: 16px; }
-    .timeline-image {
-        height: 120px;
+    
+    /* RESPONSIVE LOGO - GANTI .timeline-image → .timeline-logo */
+    .timeline-logo {
+        height: 90px;
         margin: -16px -16px 12px -16px;
         border-radius: 6px 6px 0 0;
+    }
+    .project-logo {
+        height: 150px;
+    }
+    .certificate-logo {
+        height: 110px;
     }
 }
 
@@ -1104,93 +1103,15 @@ body.light-mode .timeline-image {
     .btn { padding: 10px 20px; font-size: 0.8rem; }
     .stat-number { font-size: 1.5rem; }
     .hero-avatar { width: 90px; height: 90px; }
-    .timeline-image { height: 100px; }
-}
-
-/* ===== HERO AVATAR LOGO ===== */
-.hero-avatar-wrapper {
-    display: inline-block;
-    margin-bottom: 24px;
-}
-
-.hero-avatar-gradient {
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
-    background: linear-gradient(135deg, var(--accent), #8b5cf6);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 3px solid var(--accent);
-    box-shadow: 0 0 60px var(--accent-glow);
-    transition: transform var(--transition);
-}
-
-.hero-avatar-gradient:hover {
-    transform: scale(1.05);
-}
-
-.hero-avatar-text {
-    font-size: 2.5rem;
-    font-weight: 800;
-    color: #fff;
-    letter-spacing: 2px;
-}
-
-/* ===== TIMELINE LOGO ===== */
-.timeline-logo {
-    width: 100%;
-    height: 120px;
-    border-radius: 8px 8px 0 0;
-    margin: -20px -24px 14px -24px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-}
-
-/* ===== PROJECT LOGO ===== */
-.project-logo {
-    height: 180px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    background-size: cover;
-    background-position: center;
-}
-
-/* ===== CERTIFICATE LOGO ===== */
-.certificate-logo {
-    height: 140px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    background-size: cover;
-    background-position: center;
-}
-
-/* ===== BADGE POSITION ===== */
-.project-logo .badge,
-.certificate-logo .cert-badge {
-    position: absolute;
-    top: 12px;
-    right: 12px;
-    font-size: 0.6rem;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-    padding: 4px 14px;
-    border-radius: 50px;
-    background: var(--accent-dim);
-    color: var(--accent);
-    border: 1px solid rgba(34, 211, 238, 0.1);
-}
-
-.project-logo .badge.gold,
-.certificate-logo .cert-badge.gold {
-    background: rgba(251, 191, 36, 0.12);
-    color: #fbbf24;
-    border-color: rgba(251, 191, 36, 0.1);
+    
+    /* RESPONSIVE LOGO - HP */
+    .timeline-logo {
+        height: 70px;
+    }
+    .project-logo {
+        height: 130px;
+    }
+    .certificate-logo {
+        height: 90px;
+    }
 }
