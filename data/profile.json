@@ -1,0 +1,74 @@
+{
+  "name": "Samuel Mahanaim Sinurat",
+  "title": "Frontend Developer | AI Engineer | Computer Science Student (AI)",
+  "bio": "Final-year Computer Science student specializing in Artificial Intelligence at President University, expected to graduate in August 2026. Passionate about building AI-powered web applications and modern software solutions.",
+  "email": "samuel.sinurat05@gmail.com",
+  "location": "West Jakarta, Jakarta, Indonesia",
+  "languages": [
+    { "name": "Indonesian", "level": "Native" },
+    { "name": "English", "level": "Professional" },
+    { "name": "Japanese", "level": "Elementary" },
+    { "name": "Malay", "level": "Limited" }
+  ],
+  "skills": ["HTML", "CSS", "JavaScript", "PHP", "Laravel", "MySQL", "Python", "GitHub", "AI", "Team Management"],
+  "hobbies": ["Photography", "Videography", "Creative Media", "Robotics", "Environmental Action"],
+  "quote": "Every masterpiece begins with a single decision.",
+  "social": {
+    "github": "https://github.com/SamAscend",
+    "linkedin": "https://www.linkedin.com/in/samuel-mahanaim-sinurat-25736034a/",
+    "instagram": "#"
+  },
+  "experience": [
+    {
+      "title": "Sagara Revamp Lead",
+      "company": "Sagara Technology",
+      "period": "Jan 2026 - Present",
+      "type": "Contract",
+      "location": "Central Jakarta",
+      "description": "Led complete digital revamp of Sagara Asia Technology's web platform with AI chatbot and lead management dashboard.",
+      "skills": ["HTML", "CSS", "AI Chatbot"]
+    },
+    {
+      "title": "Frontend Developer",
+      "company": "Sagara Technology",
+      "period": "Sep 2025 - Apr 2026",
+      "type": "Full-time",
+      "location": "Central Jakarta",
+      "description": "Developed responsive and efficient user interfaces using modern web technologies.",
+      "skills": ["Test Planning", "GitHub"]
+    },
+    {
+      "title": "AI Engineer",
+      "company": "LapisAI",
+      "period": "Jun 2025 - Aug 2025",
+      "type": "Contract",
+      "location": "North Cikarang",
+      "description": "Developed AI-powered chatbot assistant for corporate client using Python.",
+      "skills": ["Python", "AI"]
+    },
+    {
+      "title": "Fullstack Developer - PUnten",
+      "company": "Setsail BizAccel",
+      "period": "Nov 2023 - May 2024",
+      "type": "Seasonal",
+      "location": "North Cikarang",
+      "description": "Built PUnten food ordering platform for President University. Awarded 1st Place at Campus Project Exhibition.",
+      "skills": ["Laravel", "MySQL", "Team Management"]
+    },
+    {
+      "title": "Robotics Engineer",
+      "company": "President University",
+      "period": "Feb 2025 - May 2025",
+      "type": "Seasonal",
+      "location": "North Cikarang",
+      "description": "Designed Arduino Uno-based robotic vehicle with obstacle detection, remote control, and fire detection system.",
+      "skills": ["Arduino", "C++", "IoT"]
+    }
+  ],
+  "education": {
+    "university": "President University",
+    "degree": "Associate's degree, Teknik Informatika",
+    "period": "Sep 2023 - Aug 2026",
+    "specialization": "Artificial Intelligence"
+  }
+}

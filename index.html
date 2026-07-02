@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Samuel M. Sinurat — Portfolio</title>
+    <meta name="description" content="Frontend Developer & AI Engineer specializing in building AI-powered web applications." />
+    
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700;14..32,800;14..32,900&display=swap" rel="stylesheet" />
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+    
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>" />
+</head>
+<body>
+
+    <!-- ===== NAVIGATION ===== -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <a href="#home" class="logo">
+                <span class="star">✦</span> SM
+            </a>
+            
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home" onclick="closeMenu()">Home</a></li>
+                <li><a href="#about" onclick="closeMenu()">About</a></li>
+                <li><a href="#experience" onclick="closeMenu()">Experience</a></li>
+                <li><a href="#projects" onclick="closeMenu()">Work</a></li>
+                <li><a href="#certificates" onclick="closeMenu()">Certificates</a></li>
+                <li><a href="#contact" onclick="closeMenu()">Contact</a></li>
+            </ul>
+            
+            <div class="nav-actions">
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ===== 3D BACKGROUND (FULL PAGE) ===== -->
+    <div id="three-canvas" class="three-canvas"></div>
+
+    <!-- ===== HERO ===== -->
+    <section class="hero" id="home">
+        <div class="hero-overlay"></div>
+        
+        <div class="hero-content">
+            <!-- TETEP PAKE GAMBAR -->
+            <img src="assets/images/Samuel M. Sinurat.png" alt="Samuel M. Sinurat" class="hero-avatar" />
+            
+            <h1 class="hero-title">
+                Samuel <span class="highlight">M. Sinurat</span>
+            </h1>
+            
+            <div class="hero-typing">
+                <span class="hero-typing-text" id="typingText"></span>
+            </div>
+            
+            <p class="hero-subtitle">
+                Frontend Developer · AI Engineer · Computer Science Student
+            </p>
+            
+            <div class="hero-buttons">
+                <a href="#experience" class="btn btn-primary">View My Work</a>
+                <a href="#contact" class="btn btn-secondary">Get in Touch</a>
+            </div>
+            
+            <div class="social-links">
+                <a href="https://github.com/SamAscend" target="_blank" aria-label="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/samuel-mahanaim-sinurat-25736034a/" target="_blank" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="mailto:samuel.sinurat05@gmail.com" aria-label="Email">
+                    <i class="fas fa-envelope"></i>
+                </a>
+            </div>
+        </div>
+        
+        <div class="scroll-indicator">
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- ===== ABOUT ===== -->
+    <section class="about fade-in" id="about">
+        <div class="container">
+            <h2 class="section-title"><span>About Me</span></h2>
+            
+            <div class="about-grid">
+                <div class="about-text">
+                    <p>
+                        I'm a <span class="highlight">final-year Computer Science student</span> at President University, 
+                        specializing in Artificial Intelligence and graduating August 2026. 
+                        I build <span class="highlight">AI-powered web applications</span> and modern software solutions 
+                        that solve real business challenges.
+                    </p>
+                    <p>
+                        From full-stack platforms and robotics to leading environmental initiatives, 
+                        I work at the intersection of technology, design, and impact.
+                    </p>
+                    
+                    <div class="about-stats">
+                        <div class="stat-card">
+                            <span class="stat-number">6+</span>
+                            <span class="stat-label">Projects Delivered</span>
+                        </div>
+                        <div class="stat-card">
+                            <span class="stat-number">3+</span>
+                            <span class="stat-label">Years Active</span>
+                        </div>
+                        <div class="stat-card">
+                            <span class="stat-number">1</span>
+                            <span class="stat-label">Award Winner</span>
+                        </div>
+                        <div class="stat-card">
+                            <span class="stat-number">1000</span>
+                            <span class="stat-label">Mangroves Planted</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="about-sidebar">
+                    <div>
+                        <h3>Technical Skills</h3>
+                        <div class="tag-group">
+                            <span class="tag tag-cyan">HTML</span>
+                            <span class="tag tag-cyan">CSS</span>
+                            <span class="tag tag-cyan">JavaScript</span>
+                            <span class="tag tag-cyan">PHP</span>
+                            <span class="tag tag-cyan">Laravel</span>
+                            <span class="tag tag-cyan">MySQL</span>
+                            <span class="tag tag-cyan">Python</span>
+                            <span class="tag tag-cyan">Git</span>
+                            <span class="tag tag-cyan">GitHub</span>
+                            <span class="tag tag-cyan">AI / ML</span>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <h3>Beyond Code</h3>
+                        <div class="tag-group">
+                            <span class="tag">Photography</span>
+                            <span class="tag">Videography</span>
+                            <span class="tag">Creative Media</span>
+                            <span class="tag">Robotics</span>
+                            <span class="tag">Event Management</span>
+                            <span class="tag">Environmental Action</span>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <h3>Languages</h3>
+                        <div class="tag-group">
+                            <span class="tag">Indonesian — Native</span>
+                            <span class="tag">English — Professional</span>
+                            <span class="tag">Japanese — Elementary</span>
+                            <span class="tag">Malay — Limited</span>
+                        </div>
+                    </div>
+                    
+                    <div class="quote-card">
+                        <p>"Every masterpiece begins with a single decision."</p>
+                        <span class="quote-author">— Samuel M. Sinurat</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== EXPERIENCE ===== -->
+    <section class="experience fade-in" id="experience">
+        <div class="container">
+            <h2 class="section-title"><span>Experience</span></h2>
+            
+            <div class="timeline">
+                <!-- EXPERIENCE 1: Sagara Revamp -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-logo" style="background: linear-gradient(135deg, #0a1628, #1a3a4a);">
+                            <i class="fas fa-rocket" style="font-size: 2.5rem; color: rgba(34, 211, 238, 0.5);"></i>
+                        </div>
+                        <span class="timeline-badge">Contract · 11 months</span>
+                        <h3 class="timeline-title">Sagara Revamp Lead</h3>
+                        <p class="timeline-company">Sagara Technology · Central Jakarta</p>
+                        <p class="timeline-period">Jan 2026 — Present</p>
+                        <p class="timeline-desc">
+                            Led complete digital transformation of Sagara Asia Technology's web platform. 
+                            Built AI-powered chatbot for client engagement and centralized lead management 
+                            dashboard for internal sales teams.
+                        </p>
+                        <div class="timeline-tags">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>AI Chatbot</span>
+                            <span>Dashboard</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- EXPERIENCE 2: Frontend Developer -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-logo" style="background: linear-gradient(135deg, #0a1a2a, #1a3a5a);">
+                            <i class="fas fa-code" style="font-size: 2.5rem; color: rgba(34, 211, 238, 0.5);"></i>
+                        </div>
+                        <span class="timeline-badge">Full-time · 8 months</span>
+                        <h3 class="timeline-title">Frontend Developer</h3>
+                        <p class="timeline-company">Sagara Technology · Central Jakarta</p>
+                        <p class="timeline-period">Sep 2025 — Apr 2026</p>
+                        <p class="timeline-desc">
+                            Developed responsive user interfaces using modern web technologies. 
+                            Optimized digital experiences with industry best practices.
+                        </p>
+                        <div class="timeline-tags">
+                            <span>JavaScript</span>
+                            <span>GitHub</span>
+                            <span>Test Planning</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- EXPERIENCE 3: AI Engineer -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-logo" style="background: linear-gradient(135deg, #0a1a0a, #1a3a1a);">
+                            <i class="fas fa-brain" style="font-size: 2.5rem; color: rgba(74, 222, 128, 0.5);"></i>
+                        </div>
+                        <span class="timeline-badge">Contract · 3 months</span>
+                        <h3 class="timeline-title">AI Engineer</h3>
+                        <p class="timeline-company">LapisAI · North Cikarang</p>
+                        <p class="timeline-period">Jun 2025 — Aug 2025</p>
+                        <p class="timeline-desc">
+                            Developed AI-powered chatbot assistant using Python. Tailored to client's 
+                            internal workflow, delivering a smart assistant solution that enhanced 
+                            workplace productivity.
+                        </p>
+                        <div class="timeline-tags">
+                            <span>Python</span>
+                            <span>AI</span>
+                            <span>NLP</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- EXPERIENCE 4: PUnten -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-logo" style="background: linear-gradient(135deg, #1a0a2e, #2d1b4e);">
+                            <i class="fas fa-utensils" style="font-size: 2.5rem; color: rgba(168, 85, 247, 0.5);"></i>
+                        </div>
+                        <span class="timeline-badge gold">Award Winner · 1st Place</span>
+                        <h3 class="timeline-title">Fullstack Developer — PUnten</h3>
+                        <p class="timeline-company">Setsail BizAccel · North Cikarang</p>
+                        <p class="timeline-period">Nov 2023 — May 2024</p>
+                        <p class="timeline-desc">
+                            Built PUnten, a web-based food ordering platform for President University 
+                            community. End-to-end development with HTML, CSS, JavaScript, PHP, Laravel, 
+                            and MySQL. Awarded 1st Place at Campus Project Exhibition.
+                        </p>
+                        <div class="timeline-tags">
+                            <span>Laravel</span>
+                            <span>MySQL</span>
+                            <span>PHP</span>
+                            <span>Team Management</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- EXPERIENCE 5: Robotics -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-logo" style="background: linear-gradient(135deg, #1a0a0a, #3a1a1a);">
+                            <i class="fas fa-microchip" style="font-size: 2.5rem; color: rgba(248, 113, 113, 0.5);"></i>
+                        </div>
+                        <span class="timeline-badge">Seasonal · 4 months</span>
+                        <h3 class="timeline-title">Robotics Engineer</h3>
+                        <p class="timeline-company">President University · North Cikarang</p>
+                        <p class="timeline-period">Feb 2025 — May 2025</p>
+                        <p class="timeline-desc">
+                            Designed Arduino Uno-based robotic vehicle with obstacle detection, 
+                            remote control, and fire detection systems. Responsible for hardware 
+                            assembly, programming, testing, and documentation.
+                        </p>
+                        <div class="timeline-tags">
+                            <span>Arduino</span>
+                            <span>C++</span>
+                            <span>IoT</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- EXPERIENCE 6: Mangrove Rangers -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-logo" style="background: linear-gradient(135deg, #0a1a12, #1a3a2a);">
+                            <i class="fas fa-tree" style="font-size: 2.5rem; color: rgba(52, 211, 153, 0.5);"></i>
+                        </div>
+                        <span class="timeline-badge">Seasonal · 3 months</span>
+                        <h3 class="timeline-title">Event Organization Specialist</h3>
+                        <p class="timeline-company">President University · North Cikarang</p>
+                        <p class="timeline-period">Jun 2024 — Aug 2024</p>
+                        <p class="timeline-desc">
+                            Organized Mangrove Rangers, a campus environmental project planting 
+                            1,000 mangrove seeds in Karawang. End-to-end planning, volunteer 
+                            coordination, and on-site operations.
+                        </p>
+                        <div class="timeline-tags">
+                            <span>Event Planning</span>
+                            <span>Team Management</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- EXPERIENCE 7: Allianz -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-logo" style="background: linear-gradient(135deg, #0a0a2a, #1a1a4a);">
+                            <i class="fas fa-shield-alt" style="font-size: 2.5rem; color: rgba(96, 165, 250, 0.5);"></i>
+                        </div>
+                        <span class="timeline-badge">Self-employed · 9 months</span>
+                        <h3 class="timeline-title">Insurance Agent</h3>
+                        <p class="timeline-company">Allianz · Central Jakarta</p>
+                        <p class="timeline-period">Nov 2025 — Present</p>
+                        <p class="timeline-desc">
+                            Delivering personalized financial protection solutions through life and 
+                            health insurance products. Focused on client needs analysis and 
+                            long-term relationship building.
+                        </p>
+                        <div class="timeline-tags">
+                            <span>Leadership</span>
+                            <span>Professional Development</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== PROJECTS ===== -->
+    <section class="projects fade-in" id="projects">
+        <div class="container">
+            <h2 class="section-title"><span>Featured Work</span></h2>
+            
+            <div class="projects-grid">
+                <!-- PROJECT 1: Sagara Revamp -->
+                <div class="project-card">
+                    <div class="project-logo" style="background: linear-gradient(135deg, #0a1628, #1a3a4a);">
+                        <i class="fas fa-globe" style="font-size: 3rem; color: rgba(34, 211, 238, 0.4);"></i>
+                        <span class="badge">Live</span>
+                    </div>
+                    <div class="project-body">
+                        <h3>Sagara Revamp</h3>
+                        <p>Complete digital transformation of Sagara Technology's platform with AI chatbot and lead management.</p>
+                        <div class="project-tags">
+                            <span>HTML/CSS</span>
+                            <span>AI Chatbot</span>
+                            <span>Dashboard</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- PROJECT 2: PUnten -->
+                <div class="project-card">
+                    <div class="project-logo" style="background: linear-gradient(135deg, #1a0a2e, #2d1b4e);">
+                        <i class="fas fa-utensils" style="font-size: 3rem; color: rgba(168, 85, 247, 0.4);"></i>
+                        <span class="badge gold">Award Winner</span>
+                    </div>
+                    <div class="project-body">
+                        <h3>PUnten</h3>
+                        <p>Web-based food ordering platform for President University community. Built with Laravel &amp; MySQL.</p>
+                        <div class="project-tags">
+                            <span>Laravel</span>
+                            <span>MySQL</span>
+                            <span>PHP</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- PROJECT 3: AI Chatbot -->
+                <div class="project-card">
+                    <div class="project-logo" style="background: linear-gradient(135deg, #0a1a0a, #1a3a1a);">
+                        <i class="fas fa-robot" style="font-size: 3rem; color: rgba(74, 222, 128, 0.4);"></i>
+                    </div>
+                    <div class="project-body">
+                        <h3>AI Corporate Assistant</h3>
+                        <p>Python-based AI chatbot for corporate workflow automation and employee support.</p>
+                        <div class="project-tags">
+                            <span>Python</span>
+                            <span>AI</span>
+                            <span>NLP</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- PROJECT 4: Arduino Robotics -->
+                <div class="project-card">
+                    <div class="project-logo" style="background: linear-gradient(135deg, #1a0a0a, #3a1a1a);">
+                        <i class="fas fa-microchip" style="font-size: 3rem; color: rgba(248, 113, 113, 0.4);"></i>
+                    </div>
+                    <div class="project-body">
+                        <h3>Arduino Robotics</h3>
+                        <p>Autonomous vehicle with obstacle detection, remote control, and fire detection systems.</p>
+                        <div class="project-tags">
+                            <span>Arduino</span>
+                            <span>C++</span>
+                            <span>IoT</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- PROJECT 5: Mangrove Rangers -->
+                <div class="project-card">
+                    <div class="project-logo" style="background: linear-gradient(135deg, #0a1a12, #1a3a2a);">
+                        <i class="fas fa-tree" style="font-size: 3rem; color: rgba(52, 211, 153, 0.4);"></i>
+                    </div>
+                    <div class="project-body">
+                        <h3>Mangrove Rangers</h3>
+                        <p>Environmental initiative planting 1,000 mangrove seeds in Karawang. Full event management.</p>
+                        <div class="project-tags">
+                            <span>Event Planning</span>
+                            <span>Team Management</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- PROJECT 6: Portfolio -->
+                <div class="project-card">
+                    <div class="project-logo" style="background: linear-gradient(135deg, #0a0a1a, #1a1a3a);">
+                        <i class="fas fa-code" style="font-size: 3rem; color: rgba(99, 102, 241, 0.4);"></i>
+                    </div>
+                    <div class="project-body">
+                        <h3>Portfolio Website</h3>
+                        <p>Modern portfolio built with HTML, Tailwind, Three.js, and AI-powered design principles.</p>
+                        <div class="project-tags">
+                            <span>Three.js</span>
+                            <span>Tailwind</span>
+                            <span>3D</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CERTIFICATES ===== -->
+    <section class="certificates fade-in" id="certificates">
+        <div class="container">
+            <h2 class="section-title"><span>Certificates & Awards</span></h2>
+            
+            <div class="certificates-grid">
+                <!-- CERTIFICATE 1: Economic Survival -->
+                <div class="certificate-card">
+                    <div class="certificate-logo" style="background: linear-gradient(135deg, #1a0a0a, #3a1a1a);">
+                        <i class="fas fa-trophy" style="font-size: 3rem; color: rgba(251, 191, 36, 0.6);"></i>
+                        <span class="cert-badge gold">1st Winner</span>
+                    </div>
+                    <div class="certificate-body">
+                        <h3>Economic Survival Exhibition Competition 2024</h3>
+                        <p class="cert-issuer">President University · Jababeka, Indonesia</p>
+                        <p class="cert-date">May 8, 2024</p>
+                        <p class="cert-desc">
+                            Awarded 1st Place as a Finalist in the Application Category for the PUnten project — 
+                            a web-based food ordering platform for the campus community.
+                        </p>
+                        <div class="cert-tags">
+                            <span>🏆 1st Place</span>
+                            <span>Web Application</span>
+                            <span>Innovation</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CERTIFICATE 2: AI Certification -->
+                <div class="certificate-card">
+                    <div class="certificate-logo" style="background: linear-gradient(135deg, #0a1a2a, #1a3a5a);">
+                        <i class="fas fa-certificate" style="font-size: 3rem; color: rgba(34, 211, 238, 0.4);"></i>
+                        <span class="cert-badge">Certificate</span>
+                    </div>
+                    <div class="certificate-body">
+                        <h3>AI & Machine Learning Certification</h3>
+                        <p class="cert-issuer">LapisAI · North Cikarang</p>
+                        <p class="cert-date">August 2025</p>
+                        <p class="cert-desc">
+                            Completed intensive training in Artificial Intelligence and Machine Learning, 
+                            focusing on NLP and chatbot development.
+                        </p>
+                        <div class="cert-tags">
+                            <span>AI</span>
+                            <span>Machine Learning</span>
+                            <span>NLP</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CERTIFICATE 3: Tambahan -->
+                <div class="certificate-card">
+                    <div class="certificate-logo" style="background: linear-gradient(135deg, #1a1a0a, #3a3a1a);">
+                        <i class="fas fa-award" style="font-size: 3rem; color: rgba(251, 191, 36, 0.4);"></i>
+                        <span class="cert-badge">Achievement</span>
+                    </div>
+                    <div class="certificate-body">
+                        <h3>Leadership Excellence Award</h3>
+                        <p class="cert-issuer">President University · Jababeka</p>
+                        <p class="cert-date">December 2024</p>
+                        <p class="cert-desc">
+                            Recognized for outstanding leadership in campus organization and community service initiatives.
+                        </p>
+                        <div class="cert-tags">
+                            <span>Leadership</span>
+                            <span>Community Service</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CONTACT ===== -->
+    <section class="contact fade-in" id="contact">
+        <div class="container">
+            <h2 class="section-title"><span>Get in Touch</span></h2>
+            
+            <div class="contact-wrapper">
+                <p>Interested in working together? Let's start a conversation.</p>
+                
+                <div class="contact-grid">
+                    <a href="mailto:samuel.sinurat05@gmail.com" class="contact-item">
+                        <span class="icon"><i class="fas fa-envelope"></i></span>
+                        <span class="label">Email</span>
+                        <span class="value">samuel.sinurat05@gmail.com</span>
+                    </a>
+                    
+                    <a href="https://www.linkedin.com/in/samuel-mahanaim-sinurat-25736034a/" target="_blank" class="contact-item">
+                        <span class="icon"><i class="fab fa-linkedin-in"></i></span>
+                        <span class="label">LinkedIn</span>
+                        <span class="value">Samuel M. Sinurat</span>
+                    </a>
+                    
+                    <a href="https://github.com/SamAscend" target="_blank" class="contact-item">
+                        <span class="icon"><i class="fab fa-github"></i></span>
+                        <span class="label">GitHub</span>
+                        <span class="value">SamAscend</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer fade-in">
+        <div class="container">
+            <p>&copy; 2026 Samuel M. Sinurat. Crafted with precision.</p>
+        </div>
+    </footer>
+
+    <!-- ===== SCRIPTS ===== -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="js/three-setup.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/data-loader.js"></script>
+</body>
+</html>
